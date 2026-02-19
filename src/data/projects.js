@@ -59,7 +59,7 @@ export const projects = [
     year: "2025",
     tags: ["photography", "commercial", "film"],
     media: [
-      { type: "video", src: "/assets/projects/product-photoshoot/Dr. Ancient Commercial Shoot.mp4" },
+      { type: "video", src: `assets/projects/product-photoshoot/dr-ancient-commercial-shoot.mp4` },
       { type: "image", src: "/assets/projects/product-photoshoot/PHOTO-2025-10-09-00-20-11.jpg" },
       { type: "image", src: "/assets/projects/product-photoshoot/PHOTO-2025-10-11-21-35-50.jpg" },
       { type: "image", src: "/assets/projects/product-photoshoot/PHOTO-2025-10-11-21-35-50 2.jpg" },
