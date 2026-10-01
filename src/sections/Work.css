@@ -56,10 +56,11 @@
   border-color: var(--work-btn-active-bg);
 }
 
-.work-filter-btn--logo { --btn-accent: var(--color-logo); }
-.work-filter-btn--product { --btn-accent: var(--color-product); }
-.work-filter-btn--social { --btn-accent: var(--color-social); }
-.work-filter-btn--animated { --btn-accent: var(--color-animated); }
+.work-filter-btn--product-design { --btn-accent: var(--color-product); }
+.work-filter-btn--photography { --btn-accent: var(--color-product); }
+.work-filter-btn--branding { --btn-accent: var(--color-social); }
+.work-filter-btn--web { --btn-accent: var(--color-stopmotion); }
+.work-filter-btn--digital-product { --btn-accent: var(--color-shortfilm); }
 .work-filter-btn--all { --btn-accent: var(--color-black); }
 
 .work-grid {

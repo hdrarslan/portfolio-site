@@ -1,27 +1,23 @@
 import { useState, useMemo } from 'react';
-import { projects, CATEGORIES } from '../data/projects';
+import { PROJECTS, CATEGORIES } from '../data/projects';
 import ProjectCard from '../components/ProjectCard';
 import './Work.css';
 
 const CATEGORY_COLORS = {
-  All: 'all',
-  'Logo Design': 'logo',
-  'Product Design': 'product',
-  'Social Media': 'social',
-  'Animated Visuals': 'animated',
+  'All': null,
+  'Product Design': 'product-design',
+  'Photography': 'photography',
+  'Social Media': 'branding',
+  'Web Design': 'web',
+  'Digital Product': 'digital-product',
 };
 
 export default function Work({ onProjectClick }) {
   const [filter, setFilter] = useState('All');
-
   const filtered = useMemo(
-    () =>
-      filter === 'All'
-        ? projects
-        : projects.filter((p) => p.categories.includes(filter)),
-    [filter],
+    () => filter === 'All' ? PROJECTS : PROJECTS.filter((p) => p.category === filter),
+    [filter]
   );
-
   return (
     <section
       id="work"
@@ -30,10 +26,7 @@ export default function Work({ onProjectClick }) {
       aria-labelledby="work-heading"
     >
       <div className="work-inner">
-        <h2 id="work-heading" className="work-title">
-          Work
-        </h2>
-
+        <h2 id="work-heading" className="work-title">Work</h2>
         <div className="work-filters" role="group" aria-label="Filter projects">
           {CATEGORIES.map((cat) => (
             <button
@@ -47,7 +40,6 @@ export default function Work({ onProjectClick }) {
             </button>
           ))}
         </div>
-
         <ul className="work-grid">
           {filtered.map((project) => (
             <li key={project.id}>

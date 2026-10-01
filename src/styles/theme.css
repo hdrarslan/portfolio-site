@@ -7,10 +7,10 @@
   --font-heading: "CallFour", cursive;
   --font-body: 'Space Grotesk', system-ui, sans-serif;
 
-  --color-logo: #d45b5b;
   --color-product: #5b9bd5;
   --color-social: #e6c84a;
-  --color-animated: #7cb87c;
+  --color-stopmotion: #7cb87c;
+  --color-shortfilm: #2c3e6a;
   --color-red: #d45b5b;
   --color-blue: #5b9bd5;
   --color-green: #7cb87c;
@@ -50,18 +50,18 @@ body, p, .home-intro, .contact-label, .contact-email, .contact-copy,
   --work-card-border: transparent;
 }
 
-.work[data-category="Logo Design"] {
-  --work-bg: #fef2f2;
+.work[data-category="Product Design"] {
+  --work-bg: #f0f6fc;
   --work-text: var(--color-black);
-  --work-border: rgba(212, 91, 91, 0.35);
-  --work-btn-bg: rgba(212, 91, 91, 0.12);
+  --work-border: rgba(91, 155, 213, 0.35);
+  --work-btn-bg: rgba(91, 155, 213, 0.12);
   --work-btn-text: var(--color-black);
-  --work-btn-active-bg: var(--color-logo);
+  --work-btn-active-bg: var(--color-product);
   --work-btn-active-text: #ffffff;
-  --work-card-border: rgba(212, 91, 91, 0.4);
+  --work-card-border: rgba(91, 155, 213, 0.4);
 }
 
-.work[data-category="Product Design"] {
+.work[data-category="Photography"] {
   --work-bg: #f0f6fc;
   --work-text: var(--color-black);
   --work-border: rgba(91, 155, 213, 0.35);
@@ -83,13 +83,24 @@ body, p, .home-intro, .contact-label, .contact-email, .contact-copy,
   --work-card-border: rgba(230, 200, 74, 0.5);
 }
 
-.work[data-category="Animated Visuals"] {
+.work[data-category="Web Design"] {
   --work-bg: #f0f8f0;
   --work-text: var(--color-black);
   --work-border: rgba(124, 184, 124, 0.35);
   --work-btn-bg: rgba(124, 184, 124, 0.2);
   --work-btn-text: var(--color-black);
-  --work-btn-active-bg: var(--color-animated);
+  --work-btn-active-bg: var(--color-stopmotion);
   --work-btn-active-text: #ffffff;
   --work-card-border: rgba(124, 184, 124, 0.4);
+}
+
+.work[data-category="Digital Product"] {
+  --work-bg: #e8ecf4;
+  --work-text: var(--color-black);
+  --work-border: rgba(44, 62, 106, 0.3);
+  --work-btn-bg: rgba(44, 62, 106, 0.15);
+  --work-btn-text: var(--color-black);
+  --work-btn-active-bg: var(--color-shortfilm);
+  --work-btn-active-text: #ffffff;
+  --work-card-border: rgba(44, 62, 106, 0.4);
 }

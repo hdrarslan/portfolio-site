@@ -4,7 +4,7 @@
  */
 @font-face {
   font-family: "CallFour";
-  src: url("../assets/fonts/CallFour/Call Four L Regular 3.ttf") format("truetype");
+  src: url("/assets/fonts/CallFour/Call Four L Regular 3.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

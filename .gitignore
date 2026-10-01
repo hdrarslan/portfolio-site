@@ -4,4 +4,8 @@ dist/
 *.local
 .env
 .env.*
-node_modules/
+*.zip
+/Arşiv/
+/assets/
+/css/
+/js/

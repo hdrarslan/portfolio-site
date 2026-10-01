@@ -1,13 +1,22 @@
+/**
+ * Home: full-bleed About image.
+ */
 .home {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  background: #ffffff;
+  padding: 0;
 }
 
-.home-cover {
-  display: block;
+.home-inner {
   width: 100%;
+}
+
+.home-image-wrap {
+  width: 100%;
+}
+
+.home-image {
+  width: 100%;
+  max-width: none;
   height: auto;
-  object-fit: cover;
+  display: block;
+  object-fit: contain;
 }

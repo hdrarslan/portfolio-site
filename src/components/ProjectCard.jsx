@@ -1,10 +1,12 @@
+/**
+ * Project card: thumbnail visible (no blur). Hover = static monitor overlay (CSS noise + scanlines) behind title; title on top.
+ */
 import './ProjectCard.css';
 
 const BASE = import.meta.env.BASE_URL;
-const resolve = (p) =>
-  p.startsWith('/') ? `${BASE}${p.slice(1)}` : `${BASE}${p}`;
 
 export default function ProjectCard({ project, onClick }) {
+  const thumbSrc = `${BASE}${project.thumbnail}`;
   return (
     <article className="project-card">
       <button
@@ -14,7 +16,7 @@ export default function ProjectCard({ project, onClick }) {
         aria-label={`View project: ${project.title}`}
       >
         <img
-          src={resolve(project.thumb)}
+          src={thumbSrc}
           alt=""
           className="project-card-thumb"
           loading="lazy"
