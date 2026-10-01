@@ -23,15 +23,16 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.25rem;
+  gap: clamp(0.4rem, 3vw, 1.25rem);
 }
 
 .header-nav-link {
   color: var(--color-black);
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.95rem;
-  padding: 0.25rem 0.5rem;
+  font-size: clamp(1.05rem, 2.8vw, 1.1rem);
+  padding: 0.25rem clamp(0.2rem, 1.5vw, 0.5rem);
+  white-space: nowrap;
   border-radius: 4px;
   transition: box-shadow var(--transition);
 }
@@ -42,3 +43,9 @@
 .header-nav-link--green:focus-visible { box-shadow: 0 0 0 2px var(--color-green); }
 .header-nav-link--red:hover,
 .header-nav-link--red:focus-visible { box-shadow: 0 0 0 2px var(--color-red); }
+
+@media (min-width: 769px) {
+  .header-nav-link {
+    font-size: 1.15rem;
+  }
+}
